@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-rows: 500px ;
+        }
+        .child{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+        }
+        .ch1{
+            background-color: #cb1c1c;
+            align-self:center;
+        }
+        .ch2{
+            background-color: #c8cb1c;
+            justify-self: right;
+        }
+        .ch3{
+            background-color: #051087;
+        }
+        .cont{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 600px 200px;
+            /* justify-items: center; */
+            /* align-items: end; */
+            /* column-gap:20px; */
+        }
+        .box{
+            /* height: 200px;
+            width: 200px; */
+            margin: 10px;
+            border:2px solid rgb(0, 0, 0);
+        }
+        .box1{
+            background-color: #e40b0b;
+            grid-column-start: 1;
+            grid-column-end: 4; 
+        }
+        .box2{
+            background-color: #16b5a5;
+            grid-row-start: 2;
+            grid-row-end: 3; 
+        }
+        .box3{
+            background-color: #b3be1c;
+        }
+        .box4{
+            background-color: #ca1897;
+        }
+    </style>
+</head>
+<body>
+    <!-- Grid properties  -->
+    <div class="parent">
+        <div class="child ch1"></div>
+        <div class="child ch2"></div>
+        <div class="child ch3"></div>
+        <div class="child ch1"></div>
+        <div class="child ch2"></div>
+        <div class="child ch3"></div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quod fugiat. Aliquid, deserunt quae ullam ratione, neque distinctio provident maiores at, commodi numquam pariatur. Laboriosam incidunt modi laborum quas doloremque quasi dolore aperiam perspiciatis repellat ullam quo, laudantium accusantium inventore ipsum rem cupiditate distinctio vitae itaque suscipit quisquam ut mollitia earum ad exercitationem? Magnam, dignissimos architecto sit asperiores consectetur earum ad ab maiores quasi doloribus ipsam nisi optio qui cum a, vero dolorum culpa ducimus perferendis voluptate. Nesciunt consequatur quos id temporibus tempora aspernatur error. Placeat, et eos vel minima, voluptatem, facere eligendi ipsa magnam similique dignissimos quidem voluptatum recusandae! Enim, natus! Iure saepe deleniti nostrum nesciunt itaque ea soluta repudiandae, odio ipsum placeat ex, dolore possimus cumque, sed ipsam ad temporibus tenetur quasi est voluptate doloribus corporis maxime quisquam. Harum explicabo distinctio quibusdam ipsum fuga quo delectus mollitia optio totam placeat, aliquam beatae debitis asperiores, labore hic, aut illum! Repellendus explicabo quibusdam laborum quisquam id exercitationem dicta nemo iusto eveniet odio, neque doloribus pariatur similique reiciendis atque nisi dignissimos dolore repellat eligendi, amet quia tempora. Quam, corporis. Aliquid, aliquam magni nam facilis nisi animi iure atque, corporis voluptate accusantium nemo aspernatur. Quas adipisci repellendus dolorum aspernatur deleniti maiores nisi quia dolores? Enim porro temporibus illo minima amet laudantium ea explicabo quam maiores modi repellat ex qui, illum quidem. Neque nisi vel eveniet voluptas cupiditate doloremque itaque. Tempora ducimus voluptatum eius, repellat, aspernatur repudiandae ullam nostrum ratione eum molestias provident ab sit explicabo assumenda amet numquam impedit quae corporis similique. Perferendis iusto aliquam ad earum iste nostrum quod laborum, quas maxime a iure debitis dignissimos natus ab! Excepturi, magnam reiciendis sed odio incidunt similique repellat suscipit iste. Inventore, eaque officiis animi temporibus voluptatem dignissimos similique saepe, incidunt dolorem quisquam reiciendis, corrupti cumque vitae odio sint? Quidem laudantium neque quisquam. Nihil labore dolores iste minima odit aliquid quae, et corporis ducimus! Possimus corrupti quo, accusamus provident, autem facere maiores explicabo itaque fugit unde voluptate sunt fugiat pariatur libero voluptatem distinctio! Distinctio, tempora ullam minus ut perspiciatis numquam ipsam! Est repellat deserunt expedita asperiores facere, dolores dolor ab amet iusto cumque nesciunt quam, mollitia quod quis fugit eaque ratione iure hic error? Quasi minima quaerat, porro deserunt vero, sint ea pariatur hic distinctio, reiciendis repellendus reprehenderit repellat. Libero laudantium error placeat, quas numquam ex dolorem? Asperiores minus fugiat enim nisi velit earum esse ducimus amet natus quidem consectetur, optio, neque ipsam voluptatem perferendis animi autem aliquid nobis vel expedita unde doloremque, repellat laboriosam! Assumenda aliquid pariatur quos fuga ea blanditiis, expedita voluptatibus doloremque et deleniti excepturi ad quibusdam a. Reiciendis tempore magni, atque nobis iusto mollitia quas quo odio eveniet consequuntur nihil maiores laborum beatae veritatis maxime dolore, impedit, voluptates vero! Minima neque earum ipsa. Quae ex, saepe dolore sunt alias magnam voluptatum maxime. Cupiditate magni minus ipsam temporibus libero voluptatem adipisci corrupti error, nihil reiciendis alias! Doloribus porro, illum voluptas, expedita itaque nobis reprehenderit quo nam aut, minima repellendus! Deserunt inventore sed minima possimus cumque aliquam quo vero eos. Quisquam, et?</p>
+    
+    <div class="cont">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>

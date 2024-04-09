@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .flexb1{
+            display: flex;
+            flex-direction: row-reverse;
+            border: 2px solid black;
+            font-size: xxx-large;
+            flex-wrap: wrap;
+            /* flex-flow:row-reverse wrap  */
+            justify-content: center;
+            row-gap: 50px;
+            align-items:stretch;
+            height: 300px;
+            /* flex-flow: row-reverse wrap; */
+        }
+        .f,.b1{
+            /* height: 200px;
+            width: 200px; */
+            background-color: #92e0a2;
+        }
+        .flexb2{
+            display: flex;
+            flex-direction: row;
+            border: 2px solid black;
+            font-size: xxx-large;
+            justify-content: space-between;
+        }
+        .cont{
+            display: flex;
+            height: 300px;
+            /* width: 700px; */
+            border:2px solid red;
+            /* justify-content: end; */
+        }
+        .flit{
+            height: 100px;
+            width: 500px;
+        }
+        .flit1{
+            background-color: #bb1d1d;
+            /* order:100; */
+            /* flex-grow: 10; */
+            /* flex-shrink: 2;  */
+            /* gets shrink with screen size */
+            flex: 10 2 ; 
+        }
+        .flit2{
+            background-color: #2832e6;
+            /* Order:1; */
+            /* flex-grow: 2; */
+            align-self: center;
+        }
+        .flit3{
+            background-color: #ff0c0c;
+            /* order:3; */
+            /* flex-grow:3; */
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex Container  -->
+    <div class="flexb1">
+        <div class="f1 f">1</div>
+        <div class="f2 f">2</div>
+        <div class="f3 f">3</div>
+        <div class="f4 f">4</div>
+        <div class="f5 f">5</div>
+    </div>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis maxime dignissimos accusamus reiciendis doloribus iste consequuntur, cumque voluptates, repellat, officiis assumenda. Ullam dignissimos assumenda, nostrum aperiam ea eos saepe molestias explicabo cumque temporibus, hic quasi tempore, quaerat sequi. Laboriosam id praesentium ipsa quae, minus magnam neque dicta sunt temporibus vel unde sit illo dolores optio beatae. Veniam consectetur voluptate quaerat laboriosam iure minima, explicabo architecto eius rerum aspernatur. Sed rem illum nisi earum laudantium est ipsam consequatur ab, dolorem aliquam officia rerum modi accusantium placeat? Error expedita mollitia facilis sapiente reprehenderit eos, ipsa labore illo dolorem repellat ducimus cumque. Temporibus!</p>
+    
+    <div class="flexb2">
+        <div class="f21 b1">1</div>
+        <div class="f22 b1">2</div>
+        <div class="f23 b1">3</div>
+    </div>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente numquam possimus facere id, ut dicta minima voluptatibus eius ad dolores dolore dolor, debitis, rem aspernatur ipsa quis voluptatum nisi recusandae culpa corrupti quas perferendis voluptatem quae! Tenetur ullam labore cumque laboriosam eum. Voluptates, a. Est fugit amet quidem ipsum qui atque alias eligendi nisi tenetur facere, suscipit error maiores vel itaque quo ut porro sint repellendus ipsam expedita. Quam, commodi.</p>
+
+    <!-- FlexItem Properties  -->
+    <div class="cont">
+        <div class="flit1 flit">Box1</div>
+        <div class="flit2 flit">box2</div>
+        <div class="flit3 flit">Box3</div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti id quidem officiis quia reiciendis illum incidunt sapiente, adipisci, doloribus voluptatibus, ratione debitis quos laborum neque ipsum facilis pariatur veritatis! Voluptate saepe tenetur qui, consequuntur nihil vitae omnis dolorum enim deleniti sit eligendi. Itaque voluptatibus aliquam commodi eveniet odit velit minima voluptatem porro veniam. Repellendus, vero suscipit ipsum dolores sunt veniam amet, perspiciatis eaque natus dicta optio reprehenderit porro quasi error praesentium fuga quis reiciendis nihil at, necessitatibus eligendi nam soluta? Necessitatibus eius temporibus excepturi consectetur? Officia rerum minima blanditiis. Assumenda officiis, corrupti vitae porro optio dolore nesciunt beatae fugit consequatur, quas sequi fuga? Perspiciatis, distinctio totam quos iste, reprehenderit ad aut vel est eveniet atque, provident eligendi architecto? Doloribus dolorum recusandae blanditiis delectus, totam quod laudantium et saepe aliquam optio perferendis dicta perspiciatis, veniam tempora porro nesciunt eveniet ea, quibusdam nostrum inventore ullam odio fugiat eaque vero? Voluptas rem expedita aliquid perferendis mollitia, quibusdam quasi nisi earum odio voluptatibus esse est aut, reiciendis libero consectetur quaerat sint maxime amet ad? Velit quod pariatur quaerat amet. Magnam, vero ea. Eaque exercitationem alias ab delectus labore non dolores, sequi et impedit quia magnam natus reprehenderit illo cumque similique libero fugit hic aspernatur ipsum voluptates adipisci in quaerat cum? Debitis nostrum, sequi dolor quidem ipsa vero temporibus consectetur ad placeat, illum ullam fugiat ratione aliquam qui fugit provident facilis voluptates et cupiditate. Quibusdam quaerat rem, deleniti nisi adipisci officia, cupiditate praesentium tempora veniam sapiente nam impedit nesciunt. Nostrum atque aspernatur placeat adipisci, commodi necessitatibus architecto deserunt tempora dolore vitae laboriosam totam facilis, tenetur ipsum quasi molestias illum quaerat reiciendis debitis. Non voluptatum ipsa iusto excepturi, nihil consequatur, obcaecati distinctio deleniti aliquam, aut facilis vero! Deleniti neque perspiciatis totam velit in voluptatum, alias asperiores. Natus excepturi eos placeat architecto voluptas non recusandae, quas fugiat eum illo impedit quia ipsam numquam nulla aliquid. Quis, maxime. Voluptas iste blanditiis facere porro assumenda alias doloribus iusto facilis id cupiditate. Laboriosam, cum. Voluptatum, totam magnam adipisci, non saepe quae praesentium fugit esse nesciunt, dicta nam. Doloribus magni deserunt qui voluptatem eligendi odit voluptate, ex, aut maiores reiciendis perspiciatis quidem quibusdam accusamus dicta minus. Rerum necessitatibus dolore nisi nam. Modi tempore perspiciatis est doloribus deleniti officiis molestiae voluptatem repellat at aut adipisci reprehenderit cupiditate eius ipsa fugiat sit, illum magni et veniam animi pariatur odio praesentium ipsam! Consectetur quas temporibus rerum dignissimos corporis debitis architecto facilis soluta, sed unde reiciendis sit repellat, voluptates recusandae eveniet quo! Aut, nulla suscipit, nihil labore ipsam, necessitatibus harum magni nesciunt excepturi officia corporis aspernatur! Possimus a molestias laborum rerum ab quibusdam dolores, ipsum officiis deleniti adipisci recusandae iusto soluta eligendi nesciunt dicta sed asperiores? Odio, distinctio id fugiat quos incidunt, error maxime suscipit quisquam eos odit sint quo quibusdam similique optio cupiditate quaerat unde earum quasi sunt eveniet necessitatibus pariatur, velit cum. Corrupti quaerat nisi quidem porro iusto quis? Repellat ratione rerum doloribus aspernatur quibusdam voluptas officia commodi distinctio quisquam provident corporis, exercitationem, esse explicabo itaque. Similique, quia illum eaque corrupti nobis eveniet.</p>
+
+</body>
+</html>

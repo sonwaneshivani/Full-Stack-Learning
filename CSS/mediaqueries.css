@@ -1,0 +1,98 @@
+body{
+    background-color: #f22626;
+}
+.para{
+    font-size: xx-large;
+    text-align: center;
+}
+.box::after{
+    content:'Hello friends';
+}
+
+/* CSS positions */
+.box2{
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    float: left;
+    clear:right;
+}
+.box3{
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    float: left;
+    clear:left;
+}
+h2{
+    background-color: #ab30c4;
+    position: sticky;
+    top:0;
+}
+h3{
+    background-color: #bcb52f;
+    position: fixed;
+    right:50%;
+}
+.box4{
+    background-color: rgb(3, 70, 19);
+    height: 150px;
+    width: 150px;
+    position:fixed;
+    bottom:0;
+    left:90%; 
+    border-radius: 60px;
+}
+.box5{
+    background-color: rgb(28, 206, 28);
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top:500px;
+    z-index: -1;
+}
+.box6{
+    background-color: rgb(69, 129, 203);
+    height: 150px;
+    width: 150px;
+    position:relative;
+    left:70%; 
+    /* border-radius: 60px; */
+}
+
+
+/* Media Queries  */
+@media(max-width:600px){
+    body{
+        background-color: #2f3dbe;
+    }
+    .box::after{
+        content:'Woah it is working';
+    }
+}
+@media(min-width:600px){
+    body{
+        background-color: #1fc716;
+    }
+}
+@media(768px<=width<=992px){
+    body{
+        background-color: #bc2fbe;
+    }
+    .box::after{
+        content:'Above 600 screen';
+    }
+}
+@media(992px<=width<=1200px){
+    body{
+        background-color: #dca825;
+    }
+    .box::after{
+        content:'Above 600 screen';
+    }
+}
+@media(min-width:1200px){
+    body{
+        background-color: #1cbed0;
+    }
+}

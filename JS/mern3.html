@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function submitData(){
+            let n=document.getElementById('name').value;
+            let s=document.getElementById('sal').value;
+            let emp = {'name': n, 'sal':s};
+            console.log(emp) //but cant send like this to server
+            let empStr=JSON.stringify(emp); //will send like this to db
+            console.log(empStr);
+            console.log(typeof JSON.parse(empStr));
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Name :  <input id="name" type="text"/>
+        Salary :  <input id="sal" type="text"/>
+        <button onclick="submitData()">Click</button>
+    </form>
+</body>
+</html>

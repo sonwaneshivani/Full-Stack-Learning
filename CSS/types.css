@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #29c457;
+}
+.para1{
+    display: inline;
+    border: 2px solid black;
+}
+.para2{
+    display: inline;
+    border: 2px solid #311adf;
+}
+.box2{
+    height: 300px;
+    width: 600px;
+    background-image: url('https://wallpapercave.com/wp/d3agYUk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.para3{
+    border: 2px solid rgb(218, 30, 30);
+    color: rgb(53, 23, 2);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    text-align-last: center;
+    font-weight: 400;
+}
+.heading{
+    text-align: center;
+}
+.box3{
+    background-attachment: scroll;
+    background-color: rgb(231, 125, 146);
+    text-indent: 2px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-variant: small-caps;
+}
+.box4{
+    max-height: 450px;
+    max-width: 300px;
+    background-color: rgb(224, 27, 27);
+    overflow: auto;
+}
+#paragraph, .para3, .para1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Using fonts from google fonts */
+
+.dummy{
+    font-family: 'Lobster', cursive;
+}
+
+.box5{
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+    margin: auto;
+}
+input{
+    height: 30px;
+    width: 90px;
+    background-color: rgb(6, 106, 4);
+}
+/* Pseudo class selectors  */
+input:hover{
+    background-color: rgb(222, 19, 19);
+}
+input:active{
+    background-color: rgb(73, 19, 222);
+}
+a:visited{
+    background-color: rgb(185, 43, 183);
+}
+div:first-child{
+    background-color: rgb(19, 188, 218);
+}
+div:nth-child(2){
+    background-color: rgb(224, 227, 27);
+}
+/* Psuedo elements selectors */
+p::first-line{
+    background-color: burlywood;
+}
+p::first-letter{
+    color: aquamarine;
+}
+para1::after{
+    content: 'Hello';
+}
+para2::before{
+    content:'Helloo';
+}
+
+/* Gradient  */
+.grad1{
+    background-image: linear-gradient(to left,red,yellow);
+    height: 400px;
+    width: 400px;
+}
+.grad2{
+    background-image: radial-gradient(circle,rgb(8, 0, 255),rgb(239, 152, 117));
+    height: 400px;
+    width: 400px;
+}
+.grad3{
+    background-image: repeating-radial-gradient(yellow 10%,green 50%, rgb(62, 50, 225) 20%,black);
+    height: 400px;
+    width: 400px;
+}
+.grad4{
+    height: 400px;
+    width: 400px;
+    background-image: conic-gradient(red 210 deg,yellow , black);
+}
+
+/* transition property  */
+.grad5{
+    height:300px;
+    width:300px;
+    background-color: red;
+    transition:width 2s,height 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s;
+}
+.grad5:hover{
+    background-color: rgb(80, 35, 193);
+    width: 500px;
+    height: 400px;
+}
+
+/* Animations  */
+.anim1{
+    width: 500px;
+    height: 400px;
+    background-color: #60f425;
+    animation-name: colorchange;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    position: relative;
+}
+.anim2{
+    width: 200px;
+    height: 200px;
+    background-color: #2525f4;
+    animation-name: colorchange2;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    position: relative;
+    /* animation-iteration-count: infinite; */
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+}
+.anim3{
+    width: 400px;
+    height: 400px;
+    background-color: #d9df16;
+    animation: colorchange2 20s ease 2s infinite alternate;
+}
+
+
+@keyframes colorchange {
+    from {
+        background-color: #420639;
+        top:0px;
+        bottom:0px;
+    }
+    to {
+        background-color: rgb(221, 103, 231);
+        top:0px;
+        left:200px
+    }
+}
+@keyframes colorchange2{
+    0%{
+        background-color: rgb(196, 186, 75);
+        top:0px;
+        left:0px;
+    }
+    25%{
+        background-color: crimson;
+        top:0px;
+        left:200px;
+    }
+    50%{
+        background-color: rgb(217, 20, 220);
+        top:200px;
+        bottom:200px;
+    }
+    75%{
+        background-color: rgb(3, 21, 13);
+        top:200px;
+        right:0px;
+    }
+    100%{
+        background-color: #b80d21;
+        top:0px;
+        bottom: 0px;
+    }
+}

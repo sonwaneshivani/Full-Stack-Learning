@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*function fun1(){
+            console.log('one');
+        }
+        function fun2(){
+            setTimeout(function(){
+                console.log('two')
+            },30);
+        }
+        function fun3(){
+            console.log('three');
+        }
+        fun1();
+        fun2();
+        fun3();
+        //output : one, three then two bcoz js doesn't wait for someone.
+    */
+
+    function fun1(){
+        console.log('one');
+    }
+    function fun3(fun2){
+        console.log('three');
+        fun2();
+    }
+    function fun2(){
+        console.log('two');
+    }
+    fun1();
+    setTimeout(function(){fun3(fun2)},30);
+    //output is one,three,two
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

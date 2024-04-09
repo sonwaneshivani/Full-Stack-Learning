@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        #myDIV{
+            background-color: lightskyblue;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding: 50px 0;
+        }
+    </style>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>></script> -->
+    <script src="jqFile.js"></script>
+</head>
+<body>
+    <button>click me</button>
+
+    <div id="myDIV">
+        This is my div element
+    </div>
+
+    <p><b>Note : </b>The element will not take up any space when the display property set to "none"</p>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                alert("This is Jquery code");
+            })
+        });
+    </script>
+</body>
+</html>
+
+<!-- GO WITH W3 SCHOOLS -->
